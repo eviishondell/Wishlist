@@ -1,0 +1,50 @@
+<!-- activity_wishlist.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".WishlistActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlistRecyclerView"
+        android:layout_width="371dp"
+        android:layout_height="418dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wishlistRecyclerView"
+        android:layout_marginTop="10dp"
+        android:hint="Item Name" />
+
+    <EditText
+        android:id="@+id/editItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Price"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editItemName"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editItemUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item URL"
+        android:layout_below="@id/editItemPrice"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:layout_below="@id/editItemUrl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
